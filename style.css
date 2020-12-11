@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* nav */
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5.2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    width: 100%;
+    height: 15%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid hsl(136, 65%, 51%);
+}
+
+.hamburger>div {
+    width: 25px;
+    height: 2px;
+    background: rgb(190, 186, 186);
+    margin-top: 5px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+
+/* global */
+
+.invite a {
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.jtb {
+    background-image: linear-gradient(to bottom right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 0.75rem 1.5rem;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.invite a:hover {
+    opacity: 0.7;
+}
+
+
+/* container */
+
+.top {
+    display: flex;
+    align-items: center;
+    line-height: 1rem;
+    margin-right: -120px;
+    padding-left: 100px;
+    justify-content: center;
+    margin-top: -50px;
+    background: linear-gradient( hsl(220, 16%, 96%), white);
+    margin-bottom: -170px;
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 250% 100%;
+}
+
+.top h1 {
+    font-size: 60px;
+    line-height: 4rem;
+    font-weight: 300;
+    color: rgb(37, 37, 37);
+    width: 80%;
+}
+
+.top p {
+    width: 75%;
+    line-height: 1.5rem;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: rgb(105, 103, 103);
+    font-weight: 500;
+}
+
+
+/* section */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    background-color: hsl(220, 16%, 96%);
+}
+
+.choice h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: rgb(37, 37, 37);
+}
+
+.choice p {
+    width: 50%;
+    line-height: 1.5rem;
+    color: rgb(105, 103, 103);
+    margin-bottom: 70px;
+}
+
+.next {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img {
+    margin-bottom: 30px;
+}
+
+.flexbox h2 {
+    margin-bottom: 20px;
+    color: rgb(37, 37, 37);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.flexbox p {
+    line-height: 1.5rem;
+    color: rgb(105, 103, 103);
+    width: 90%;
+}
+
+
+/* cards */
+
+.card {
+    position: unset;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-section {
+    padding: 40px 100px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.articles h1 {
+    color: rgb(37, 37, 37);
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.card-text {
+    font-size: 20px;
+    /* font-weight: 600; */
+}
+
+.card-title {
+    font-size: 10px;
+}
+
+.card {
+    min-height: 200px;
+    border-color: white;
+}
+
+
+/* footer */
+
+.foot {
+    background-color: hsl(233, 26%, 24%);
+    height: 25vh;
+    color: white;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-logo img {
+    margin-top: -20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img {
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+
+.social img:hover {
+    /* cursor: pointer; */
+    opacity: 0.7;
+}
+
+.link-sec a {
+    color: rgb(199, 192, 192);
+    text-decoration: none;
+}
+
+.invite p {
+    margin-top: 10px;
+    color: rgb(199, 192, 192);
+}
+
+.call {
+    padding-top: 30px;
+}
+
+.menu-wrap {
+    display: none;
+}
+
+
+/* media */
+
+@media screen and (max-width:800px) {
+    .none {
+        display: none;
+    }
+    .top {
+        flex-direction: column-reverse;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        padding-bottom: 120px;
+        background-image: unset;
+    }
+    .right img {
+        width: 100%;
+    }
+    .top h1 {
+        font-size: 30px;
+        line-height: 2rem;
+        width: 100%;
+    }
+    .top p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .section {
+        padding: unset;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .choice p {
+        width: 100%;
+    }
+    .next {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .card-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .cards-section {
+        padding: 0 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        padding: 20px;
+    }
+    .card {
+        margin-top: 20px;
+        width: 20rem;
+    }
+    .foot {
+        flex-direction: column;
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .flexbox p {
+        width: 100%;
+    }
+    .social {
+        margin-bottom: 20px;
+    }
+    .header {
+        justify-content: space-between;
+        padding: 2rem;
+        height: 10%;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        justify-self: start;
+        height: 40vh;
+        background: white;
+        left: 0px;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 70px;
+        margin-left: 20px;
+        border-radius: 10px;
+        line-height: 3rem;
+        box-shadow: 0px 4px 3px 0px hsl(230, 7%, 82%);
+        transform: translateY(-200vw);
+        /* display: none; */
+        transition: all 1.5s ease-in-out;
+        pointer-events: none;
+    }
+    .nav-links a {
+        font-size: 16px;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    body {
+        background-image: url(/images/bg-intro-mobile.svg);
+        overflow-x: visible;
+        background-repeat: no-repeat;
+    }
+    .open {
+        transform: translateY(0vw);
+        pointer-events: all;
+    }
+}
